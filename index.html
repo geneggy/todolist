@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header"><h1 class="title">Todo List</h1></header>
+
+    <main class="main">
+      <nav class="nav sidebar">
+        <h1 class="nav-project-title">Projects</h2>
+          <ul class="nav-project-list">
+
+            <li class="nav-project">Project 2 
+              
+              <button class="remove-project-btn">Remove</button></li>
+            <li class="nav-project">Project 3 <button class="remove-project-btn">Remove</button></li>
+          </ul>
+       
+        <!-- this will add a new project to the list -->
+        <!-- remove buttons will likely be replaced by x icon -->
+          <button class = "nav-project nav-new-project-btn">New Project</button>
+      </nav>
+
+      <section class="tasks-container">
+        <h2 class="task-title">Project 2</h2>
+        <ul class="task-list">
+
+          <!-- on click, task will be crossed out and marked complete -->
+          <li class="task-list-item">
+            <h3 class="task-name">Task 1</h3>
+            <!-- <p class="task-description">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p> -->
+            <p class="task-date">8.25.21</p>
+            <button class="remove-task-btn">Remove</button></li>
+          
+        
+        </ul>
+        <button class = "new-task-btn">Add Task</button>
+       
+      </section>
+    </main>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 10px;
+  background: #1abc9c;
+  color: white;
+  font-size: 25px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+.nav-project-title {
+  margin: 0;
+  padding: 16px;
+  display: block;
+  font-size: 30px;
+  color: black;
+}
+
+.nav-project {
+  margin: 0;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+.nav-new-project-btn {
+  width: 100%;
+  padding: 20px;
+  border: none;
+}
+/* Active/current link */
+.nav-project.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Links on mouse-over */
+.nav-project:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.nav-project-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tasks-container {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.task-list-item {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
