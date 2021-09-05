@@ -10,7 +10,9 @@ const render = () => {
     Interface.renderProject(proj);
   });
 
-  Interface.renderTasks(projects.projects[0]);
+  if (projects.projects[0]) {
+    Interface.renderTasks(projects.projects[0]);
+  }
 };
 
 function clearElement(project) {}
