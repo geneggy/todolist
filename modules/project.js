@@ -1,11 +1,11 @@
 export default class Project {
-  constructor(title) {
-    this.title = title;
+  constructor(name) {
+    this.name = title;
     this.tasks = [];
   }
 
-  setTitle(title) {
-    this.title = title;
+  setTitle(name) {
+    this.name = name;
   }
 
   addTask(task) {
@@ -13,13 +13,10 @@ export default class Project {
   }
 
   deleteTask(task) {
-    deleteTask(taskName) {
-      this.tasks = this.tasks.filter((task) => task.name !== taskName)
-    }
+    this.tasks = this.tasks.filter((task) => task.name !== taskName);
   }
 
   getTasks() {
     return this.tasks;
   }
-
 }
